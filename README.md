@@ -6,7 +6,7 @@
 ## Network
 학습 자료: [코딩 자율학습 네트워크 입문](https://product.kyobobook.co.kr/detail/S000217744821)
 - [네트워크 인터페이스 계층](Network/1.네트워크-인터페이스-계증.md)
-- 인터넷 계층
+- [인터넷 계층](Network/2.인터넷-계층.md)
 - IP 주소
 - 전송 계층
 - 응용 계층
