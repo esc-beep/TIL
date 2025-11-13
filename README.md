@@ -11,3 +11,5 @@
 - [전송 계층](/Network/4.전송-계층.md)
 - [응용 계층](/Network/5.응용-계층.md)
 
+## OS
+학습 자료: [컴퓨터 밑바닥의 비밀](https://product.kyobobook.co.kr/detail/S000212650856)
