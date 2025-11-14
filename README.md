@@ -13,3 +13,6 @@
 
 ## OS
 학습 자료: [컴퓨터 밑바닥의 비밀](https://product.kyobobook.co.kr/detail/S000212650856)
+
+## Linux
+학습 자료: [모던 리눅스 교과서](https://product.kyobobook.co.kr/detail/S000210138053), [실무 초밀착 리눅스: 클라우드 환경 운영부터 성능분석까지](https://fastcampus.co.kr/dev_online_linuxcloud)
