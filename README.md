@@ -16,3 +16,5 @@
 
 ## Linux
 학습 자료: [모던 리눅스 교과서](https://product.kyobobook.co.kr/detail/S000210138053), [실무 초밀착 리눅스: 클라우드 환경 운영부터 성능분석까지](https://fastcampus.co.kr/dev_online_linuxcloud)
+- [컨테이너 기반 가상화](Linux/컨테이너-기반-가상화.md)
+- [컨테이너를 구성하는 리눅스 기술](Linux/컨테이너를-구성하는-리눅스-기술.md)
