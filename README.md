@@ -1,7 +1,8 @@
 # Today I Learned(TIL)
 
-매일의 발자취 <br>
-실습 내용은 [티스토리](https://ctrl-shit-esc.tistory.com/)에 올리고, 이론 공부는 [깃허브](https://github.com/esc-beep/TIL)에 올립니다.
+매일의 발자취, 유사 메모장 <br>
+러프하게 하루 공부한 기록을 올립니다. <br>
+정제된 내용은 [티스토리 블로그](https://ctrl-shit-esc.tistory.com/)에 올라갑니다. <br>
 
 ## Network
 학습 자료: [코딩 자율학습 네트워크 입문](https://product.kyobobook.co.kr/detail/S000217744821)
@@ -17,6 +18,6 @@
 ## Linux
 학습 자료: [모던 리눅스 교과서](https://product.kyobobook.co.kr/detail/S000210138053), [실무 초밀착 리눅스: 클라우드 환경 운영부터 성능분석까지](https://fastcampus.co.kr/dev_online_linuxcloud)
 - [컨테이너 기반 가상화](Linux/컨테이너-기반-가상화.md)
-- [컨테이너를 구성하는 리눅스 기술](Linux/컨테이너를-구성하는-리눅스-기술.md)
+- [컨테이너를 구성하는 리눅스 기술](https://ctrl-shit-esc.tistory.com/214)
 - [Go 언어로 나만의 컨테이너 환경 만들기](https://ctrl-shit-esc.tistory.com/210)
 - [3티어 웹 앱 컨테이너화 해보기](https://ctrl-shit-esc.tistory.com/211)
