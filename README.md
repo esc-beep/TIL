@@ -21,3 +21,7 @@
 - [컨테이너를 구성하는 리눅스 기술](https://ctrl-shit-esc.tistory.com/214)
 - [Go 언어로 나만의 컨테이너 환경 만들기](https://ctrl-shit-esc.tistory.com/210)
 - [3티어 웹 앱 컨테이너화 해보기](https://ctrl-shit-esc.tistory.com/211)
+
+## 취준
+
+- [2025-12-02 포트폴리오 작성](취준/2025-12-02-portfolio-guide.md)
