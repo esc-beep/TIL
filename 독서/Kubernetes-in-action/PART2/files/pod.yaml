@@ -1,0 +1,62 @@
+apiVersion: v1 # YAML descriptor에서 사용한 kubernetes API 버전
+kind: Pod # kubernetes 오브젝트/리소스 유형
+metadata: # pod metadata (이름, 레이블, 어노테이션 등)
+  annotations:
+    kubernetes.io/created-by: kubectl-create
+  creationTimestamp: "2020-01-01T00:00:00
+  generatedName: kubia-
+  labels:
+    run: kubia
+  name: kubia-zxzij
+  namespace: default
+  resourceVersion: "123456"
+  selfLink: /api/v1/namespaces/default/pods/kubia-zx
+  uid: 12345678-1234-1234-1234-123456789012
+spec: # pod spec (컨테이너, 볼륨, 스케줄링 등)
+  containers:
+  - image: luksa/kubia:1.0
+    imagePullPolicy: IfNotPresent
+    name: kubia
+    ports:
+    - containerPort: 8080
+      protocol: TCP
+    resources: 
+      requests:
+        cpu: 100m
+        memory: 128Mi
+    terminationMessagePath: /dev/termination-log
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-abcde
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  nodeName: node-1
+  restartPolicy: Always
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  volumes:
+  - name: default-token-abcde
+    secret:
+      secretName: default-token-abcde
+status: # pod status (phase, conditions, container 상태 등)
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-01-01T00:00:00Z"
+    status: "True"
+    type: Initialized
+  containerStatuses:
+  - containerID: docker://abcdef1234567890abcdef1234567890abcdef123
+    image: luksa/kubia:1.0
+    imageID: docker-pullable://luksa/kubia@sha256:abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890
+    lastState: {}
+    name: kubia
+    ready: true
+    restartCount: 0
+    state:
+      running:
+        startedAt: "2020-01-01T00:00:00Z"
+    hostIP: 10.132.0.4
+    phase: Running
+    podIP: 10.0.2.3
+    startTime: "2020-01-01T00:00:00Z"
