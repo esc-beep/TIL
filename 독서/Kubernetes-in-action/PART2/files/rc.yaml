@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ReplicationController ## RC manifest 정의
+metadata:
+  name: kubia # ReplicationController 이름
+spec:
+  replicas: 3 # ReplicationController가 유지할 Pod의 수
+  selector:
+    app: kubia # ReplicationController가 관리할 Pod를 선택하는 레이블 셀렉터
+  template: # Pod 템플릿 정의
+    metadata:
+      labels:
+        app: kubia
+    spec:
+      containers:
+      - name: kubia
+        image: luksa/kubia:v1
+        ports:
+        - containerPort: 8080

@@ -1,0 +1,20 @@
+apiVersion: apps/v1 # ReplicaSet manifest 정의
+kind: ReplicaSet
+metadata:
+  name: kubia
+spec:
+  replicas: 3
+  selector:
+    matchExpressions:
+    - key: app
+      operator: In
+      values:
+      - kubia
+  template: # Pod 템플릿은 ReplicationController와 동일하게 정의
+    metadata:
+      labels:
+        app: kubia
+    spec:
+      containers:
+      - name: kubia
+        image: luksa/kubia:2.0

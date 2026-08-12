@@ -1,0 +1,21 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: batch-cronjob
+spec:
+  schedule: "*/1 * * * *" # 매 분마다 실행
+  startingDeadlineSeconds: 10 # 시작 기한을 10초로 설정
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: batch-cronjob
+            image: prom/exporter:latest
+            ports:
+            - containerPort: 9100
+          restartPolicy: OnFailure # cronjob은 기본 재시작 정책(always)를 사용하지 않음. 실패 시에만 재시작하도록 설정
+        metadata:
+          name: batch-cronjob
+          labels:
+            app: batch-cronjob
