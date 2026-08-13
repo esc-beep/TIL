@@ -1,0 +1,15 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: kubia
+spec:
+  rules:
+  - host: kubia.example.com # kubia.example.com 도메인 이름을 서비스에 매핑
+    http:
+      paths:
+      - path: / # 모든 요청을 kubia 서비스의 포트 8080으로 라우팅
+        backend:
+          service:
+            name: kubia
+            port:
+              number: 8080
